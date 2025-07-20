@@ -118,7 +118,7 @@ export default function KioskApp() {
       }
     };
 
-    pollingRef.current = setInterval(pollLatestOrder, 60000); // 1 mins
+    pollingRef.current = setInterval(pollLatestOrder, 2000); // 2 seconds
     return () => {
       if (pollingRef.current) {
         clearInterval(pollingRef.current);

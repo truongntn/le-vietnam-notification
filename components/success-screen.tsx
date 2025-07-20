@@ -51,7 +51,9 @@ export default function SuccessScreen({ points, customerName, customerPhone }: S
   const floatingElements = generateRandomPositions(10)
 
   return (
-    <div className="relative w-full h-full bg-white flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full h-full flex flex-col items-center justify-center overflow-hidden"
+      style={{ backgroundColor: "#070923" }}
+    >
       <Confetti />
 
       {/* Background animated elements */}
@@ -118,9 +120,11 @@ export default function SuccessScreen({ points, customerName, customerPhone }: S
           {showText && (
             <motion.h1
               className="text-4xl md:text-2xl font-bold mb-6"
-              style={{ color: "#000000" }}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacitycolor: "#000000" }}
+              style={{
+                color: "#31DCFF",
+                textShadow: "0 0 8px #31DCFF, 0 0 16px #31DCFF, 0 0 32px #31DCFF",
+                fontWeight: 900
+              }}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -152,7 +156,11 @@ export default function SuccessScreen({ points, customerName, customerPhone }: S
           {showText && (
             <motion.p
               className="text-xl mb-6"
-              style={{ color: "#333333" }}
+              style={{
+                color: "#31DCFF",
+                textShadow: "0 0 8px #31DCFF, 0 0 16px #31DCFF, 0 0 32px #31DCFF",
+                fontWeight: 700
+              }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.5 }}

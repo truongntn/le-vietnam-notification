@@ -70,6 +70,7 @@ export default function CheckinScreen({
 
     socketInstance.on("checkin", (data) => {
       console.log(data.phoneNumber);
+      onCheckin();
     });
     
     return () => {

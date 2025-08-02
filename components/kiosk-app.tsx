@@ -85,7 +85,7 @@ export default function KioskApp() {
     }
   }
   
-  useEffect(() => {
+  /*useEffect(() => {
     if (currentScreen !== "checkin") {
       if (pollingRef.current) {
         clearInterval(pollingRef.current);
@@ -125,7 +125,7 @@ export default function KioskApp() {
         pollingRef.current = null;
       }
     };
-  }, [currentScreen]);
+  }, [currentScreen]);*/
 
   return (
     <div className="w-full h-screen overflow-hidden">

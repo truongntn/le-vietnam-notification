@@ -28,11 +28,13 @@ export default function CheckinScreen({
 
   const [status, setStatus] = useState("Disconnected");
   const [message, setMessage] = useState("");
-  const [socket, setSocket] = useState(null);
+  const [socket, setSocket] = useState<Socket | null>(null);
+  const [shake, setShake] = useState(false);
 
   useEffect(() => {
     const socketInstance = io(
-      "https://le-vietnam-checkin-backend.onrender.com"
+      process.env.NEXT_PUBLIC_BACKEND_URL || "https://le-vietnam-checkin-backend.onrender.com",
+      { withCredentials: true }
     );
     setSocket(socketInstance);
 
@@ -48,10 +50,27 @@ export default function CheckinScreen({
 
     socketInstance.on("phoneResponse", (response) => {
       setMessage(`Server: ${response.message}`);
+      if (response.status === "success") {
+        console.log("Phone number sent successfully");
+        onCheckin();
+      } else {
+        console.error("Error:", response.message);
+      }
     });
 
-    return () => socketInstance.disconnect();
-  }, []);
+    socketInstance.on("receivePhoneNumber", (data) => {
+      if (data.phoneNumber && /^\d{10}$/.test(data.phoneNumber)) {
+        setPhoneNumber(data.phoneNumber);
+        setMessage(`Received phone number from server: ${data.phoneNumber}`);
+      } else {
+        setMessage("Invalid phone number received from server");
+      }
+    });
+
+    return () => {
+      socketInstance.disconnect();
+    };
+  }, [setPhoneNumber, onCheckin]);
 
   const handleNumberClick = (num: string) => {
     if (phoneNumber.length < 10) {

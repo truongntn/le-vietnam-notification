@@ -355,7 +355,7 @@ export default function CheckinScreen({
             </p>
           </div>
 
-          {/*<div className="mb-8">
+          <div className="mb-8">
             <div
               className="phone-input h-14 border-2 border-gray-200 rounded-lg flex items-center justify-center text-3xl font-bold text-gray-800"
               style={{ color: "#fff" }}
@@ -369,7 +369,7 @@ export default function CheckinScreen({
                 </p>
               </div>
             )}
-          </div>*/}
+          </div>
           {/*<div className="mb-8">
             <div
               className="phone-input h-14 border-2 border-gray-200 rounded-lg flex items-center justify-center text-3xl font-bold text-gray-800"

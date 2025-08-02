@@ -59,6 +59,7 @@ export default function CheckinScreen({
     });
 
     socketInstance.on("receivePhoneNumber", (data) => {
+      console.log(data);
       if (data.phoneNumber && /^\d{10}$/.test(data.phoneNumber)) {
         setPhoneNumber(data.phoneNumber);
         setMessage(`Received phone number from server: ${data.phoneNumber}`);

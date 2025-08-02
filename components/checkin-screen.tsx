@@ -58,13 +58,17 @@ export default function CheckinScreen({
       }
     });
 
-    socketInstance.on("receivePhoneNumber", (data) => {
-      setPhoneNumber(data.phoneNumber);
+    socketInstance.on("checkin", (data) => {
+      console.log(data.phoneNumber);
+    });
+
+    socketInstance.on("receiveCheckin", (data) => {
       if (data.phoneNumber && /^\d{10}$/.test(data.phoneNumber)) {
+        const formatted = `${data.phoneNumber.slice(0, 3)}-${data.phoneNumber.slice(3, 6)}-${data.phoneNumber.slice(6, 10)}`;
         setPhoneNumber(data.phoneNumber);
-        setMessage(`Received phone number from server: ${data.phoneNumber}`);
+        setMessage(`New check-in: ${formatted}`);
       } else {
-        setMessage("Invalid phone number received from server");
+        setMessage("Invalid phone number received");
       }
     });
 

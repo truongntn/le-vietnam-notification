@@ -130,7 +130,7 @@ export default function SuccessScreen({
             fontSize: "2rem",
           }}
         >
-          Loading….
+          Loading…
         </motion.span>
       </motion.div>
     </div>

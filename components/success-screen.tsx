@@ -108,8 +108,8 @@ export default function SuccessScreen({
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.3 }}
           style={{
-            color: "#0F0",
-            textShadow: "0 0 5px #0F0, 0 0 10px #0F0, 0 0 15px #0F0",
+            color: "#F3B5FD",
+            textShadow: "0 0 5px #F3B5FD, 0 0 10px #F3B5FD, 0 0 15px #F3B5FD",
             fontFamily: "monospace",
             fontWeight: 700,
             display: "block",
@@ -123,8 +123,8 @@ export default function SuccessScreen({
           animate={{ opacity: 1 }}
           transition={{ delay: 1.0, duration: 0.3 }}
           style={{
-            color: "#0F0",
-            textShadow: "0 0 5px #0F0, 0 0 10px #0F0, 0 0 15px #0F0",
+            color: "#F3B5FD",
+            textShadow: "0 0 5px #0F0, 0 0 10px #F3B5FD, 0 0 15px #F3B5FD",
             fontFamily: "monospace",
             fontWeight: 900,
             fontSize: "2rem",

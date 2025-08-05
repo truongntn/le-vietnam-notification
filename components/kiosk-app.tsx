@@ -52,7 +52,7 @@ export default function KioskApp() {
         }, 8000)
       } else {
         // No pending order found
-        setCheckinError("You have no order");
+        setCheckinError("Incorrect password");
       }
     } catch (err) {
       if (axios.isAxiosError(err)) {
@@ -76,7 +76,7 @@ export default function KioskApp() {
           }, 8000)
         } else {
           // Show error message and stay on checkin screen
-          setCheckinError("You have no order");
+          setCheckinError("Incorrect password");
         }
       } else {
         console.log('An unexpected error occurred');

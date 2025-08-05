@@ -373,7 +373,7 @@ export default function CheckinScreen({
               className="text-2xl font-bold text-gray-800 mb-1"
               style={{ color: "#F3B5FD" }}
             >
-              PLEASE ENTER YOUR<br></br>PHONE NUMBER
+              PLEASE ENTER YOUR<br></br>PASSWORD
             </h2>
             <p className="text-gray-600 text-sm" style={{ color: "#F3B5FD" }}>
               Your info will not be shared with any third party

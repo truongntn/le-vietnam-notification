@@ -375,9 +375,9 @@ export default function CheckinScreen({
             >
               PLEASE ENTER YOUR<br></br>PASSWORD
             </h2>
-            <p className="text-gray-600 text-sm" style={{ color: "#F3B5FD" }}>
+            {/*<p className="text-gray-600 text-sm" style={{ color: "#F3B5FD" }}>
               Your info will not be shared with any third party
-            </p>
+            </p>*/}
           </div>
 
           <div className="mb-8">

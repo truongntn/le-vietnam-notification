@@ -332,11 +332,11 @@ export default function CheckinScreen({
 
       {/* Right Side - Phone Entry */}
       <div
-        className="w-full  bg-white p-6 flex flex-col justify-center items-center w-full h-full"
+        className="w-full md:w-1/1 bg-white p-6 flex flex-col justify-center items-center w-full h-full"
         style={{ backgroundColor: "#070923" }}
       >
         <div
-          className="w-full max-w-md p-12"
+          className="w-full  p-12"
           style={{
             backgroundColor: "#070923",
             border: "3px solid",

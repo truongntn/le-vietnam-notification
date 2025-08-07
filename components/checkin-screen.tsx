@@ -382,14 +382,14 @@ export default function CheckinScreen({
                 fontSize: "4rem",
               }}
             >
-              PLEASE ENTER YOUR PASSWORD<br></br>
+              PLEASE ENTER YOUR PASSWORD
             </h2>
             {/*<p className="text-gray-600 text-sm" style={{ color: "#F3B5FD" }}>
               Your info will not be shared with any third party
             </p>*/}
           </div>
 
-          <div className="mb-8">
+          <div className="mb-12 mt-12">
             <div
               className="phone-input h-14 border-2 border-gray-200 rounded-lg flex items-center justify-center text-3xl font-bold text-gray-800"
               style={{ color: "#fff" }}

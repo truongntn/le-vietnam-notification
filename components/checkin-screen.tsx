@@ -389,7 +389,7 @@ export default function CheckinScreen({
             </p>*/}
           </div>
 
-          <div className="mb-12 mt-12">
+          <div className="mb-8 mt-12">
             <div
               className="phone-input h-14 border-2 border-gray-200 rounded-lg flex items-center justify-center text-3xl font-bold text-gray-800"
               style={{ color: "#fff" }}
@@ -397,7 +397,7 @@ export default function CheckinScreen({
               {formatPhoneNumber(phoneNumber) || "xxx-xxx-xxxx"}
             </div>
             {checkinError && (
-              <div className="mt-2 text-center">
+              <div className="mt-4 text-center">
                 <p
                   style={{
                     color: "#F3B5FD",
@@ -406,7 +406,7 @@ export default function CheckinScreen({
                     fontFamily: "monospace",
                     fontWeight: 700,
                     display: "block",
-                    fontSize: "1.5rem",
+                    fontSize: "2.5rem",
                   }}
                 >
                   {checkinError}

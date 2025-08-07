@@ -113,7 +113,7 @@ export default function SuccessScreen({
             fontFamily: "monospace",
             fontWeight: 700,
             display: "block",
-            fontSize: "2rem",
+            fontSize: "5.4rem",
           }}
         >
           Matrix has you...
@@ -127,7 +127,7 @@ export default function SuccessScreen({
             textShadow: "0 0 5px #0F0, 0 0 10px #F3B5FD, 0 0 15px #F3B5FD",
             fontFamily: "monospace",
             fontWeight: 900,
-            fontSize: "2rem",
+            fontSize: "5.4rem",
           }}
         >
           Loading…

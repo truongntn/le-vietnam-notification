@@ -378,7 +378,7 @@ export default function CheckinScreen({
                 fontFamily: "monospace",
                 fontWeight: 700,
                 display: "block",
-                fontSize: "1.8rem",
+                fontSize: "3.6rem",
               }}
             >
               PLEASE ENTER YOUR<br></br>PASSWORD
@@ -391,7 +391,15 @@ export default function CheckinScreen({
           <div className="mb-8">
             <div
               className="phone-input h-14 border-2 border-gray-200 rounded-lg flex items-center justify-center text-3xl font-bold text-gray-800"
-              style={{ color: "#fff" }}
+              style={{
+                color: "#F3B5FD",
+                textShadow:
+                  "0 0 5px #F3B5FD, 0 0 10px #F3B5FD, 0 0 15px #F3B5FD",
+                fontFamily: "monospace",
+                fontWeight: 700,
+                display: "block",
+                fontSize: "1.8rem",
+              }}
             >
               {formatPhoneNumber(phoneNumber) || "xxx-xxx-xxxx"}
             </div>

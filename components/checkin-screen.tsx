@@ -336,7 +336,7 @@ export default function CheckinScreen({
         style={{ backgroundColor: "#070923" }}
       >
         <div
-          className="w-full max-w-xl p-12"
+          className="w-full max-w-2xl p-12"
           style={{
             backgroundColor: "#070923",
             border: "3px solid",
@@ -379,7 +379,7 @@ export default function CheckinScreen({
                 fontFamily: "monospace",
                 fontWeight: 700,
                 display: "block",
-                fontSize: "1.8rem",
+                fontSize: "6rem",
               }}
             >
               PLEASE ENTER YOUR<br></br>PASSWORD
@@ -406,7 +406,7 @@ export default function CheckinScreen({
                     fontFamily: "monospace",
                     fontWeight: 700,
                     display: "block",
-                    fontSize: "1.2rem",
+                    fontSize: "3rem",
                   }}
                 >
                   {checkinError}

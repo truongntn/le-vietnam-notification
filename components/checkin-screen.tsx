@@ -336,7 +336,7 @@ export default function CheckinScreen({
         style={{ backgroundColor: "#070923" }}
       >
         <div
-          className="w-full max-w-80 p-12"
+          className="w-full max-w-1/2 p-12"
           style={{
             backgroundColor: "#070923",
             border: "3px solid",

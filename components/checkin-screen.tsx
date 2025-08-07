@@ -382,7 +382,7 @@ export default function CheckinScreen({
                 fontSize: "4rem",
               }}
             >
-              PLEASE ENTER YOUR<br></br>PASSWORD
+              PLEASE ENTER YOUR PASSWORD
             </h2>
             {/*<p className="text-gray-600 text-sm" style={{ color: "#F3B5FD" }}>
               Your info will not be shared with any third party

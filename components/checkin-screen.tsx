@@ -35,7 +35,7 @@ export default function CheckinScreen({
     const socketInstance = io(
       process.env.NEXT_PUBLIC_BACKEND_URL ||
         "https://le-vietnam-checkin-backend.onrender.com",
-      { withCredentials: true }
+      { /*withCredentials: true,*/ transports: ['websocket'] }
     );
     setSocket(socketInstance);
 
